@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
 ENV ANT_VERSION=1.10.11
+ENV SAXON_VERSION=Saxon-HE/10/Java/SaxonHE10-6J
 
 USER root
 
@@ -16,3 +17,7 @@ ADD https://downloads.apache.org/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.
 RUN tar -xvf /tmp/ant.tar.gz -C /opt
 ENV ANT_HOME=/opt/apache-ant-${ANT_VERSION}
 ENV PATH=${PATH}:${ANT_HOME}/bin
+
+# setup saxon
+ADD https://sourceforge.net/projects/saxon/files/${SAXON_VERSION}.zip/download /tmp/saxon.zip
+RUN unzip /tmp/saxon.zip -d ${ANT_HOME}/lib
