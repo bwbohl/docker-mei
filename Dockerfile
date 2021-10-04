@@ -9,7 +9,8 @@ USER root
 # install jre8, unzip
 RUN apt-get update && apt-get install -y \
     openjdk-8-jre-headless \
-    unzip && \
+    unzip \
+    git && \
     apt-get clean
 
 # setup ant
