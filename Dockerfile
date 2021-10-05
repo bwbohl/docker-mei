@@ -24,4 +24,4 @@ ADD https://sourceforge.net/projects/saxon/files/${SAXON_VERSION}.zip/download /
 RUN unzip /tmp/saxon.zip -d ${ANT_HOME}/lib
 
 #setup xerces
-ADD https://www.oxygenxml.com/maven/com/oxygenxml/oxygen-patched-xerces/23.1.0.0/oxygen-patched-xerces-23.1.0.0.jar ${ANT_HOME}
+ADD https://www.oxygenxml.com/maven/com/oxygenxml/oxygen-patched-xerces/23.1.0.0/oxygen-patched-xerces-23.1.0.0.jar ${ANT_HOME}/lib
