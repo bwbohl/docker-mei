@@ -1,8 +1,8 @@
+FROM ubuntu:20.04
+
 LABEL org.opencontainers.image.authors="https://github.com/bwbohl"
 LABEL org.opencontainers.image.source="https://github.com/bwbohl/docker-mei"
 LABEL org.opencontainers.image.revision="v0.1.1"
-
-FROM ubuntu:20.04
 
 ENV ANT_VERSION=1.10.11
 ENV SAXON_VERSION=Saxon-HE/10/Java/SaxonHE10-6J
