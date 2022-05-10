@@ -25,6 +25,7 @@ ENV PATH=${PATH}:${ANT_HOME}/bin
 
 # setup saxon
 ADD https://sourceforge.net/projects/saxon/files/${SAXON_VERSION}.zip/download /tmp/saxon.zip
+
 RUN unzip /tmp/saxon.zip -d ${ANT_HOME}/lib
 
 #setup xerces
